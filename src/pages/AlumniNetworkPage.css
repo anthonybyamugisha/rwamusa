@@ -1,0 +1,79 @@
+.alumni-network-page {
+  padding: 2rem 0;
+}
+
+.alumni-section {
+  margin-bottom: 2rem;
+}
+
+.alumni-section h2 {
+  color: #212121;
+  border-bottom: 3px solid #C62828;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.alumni-profile-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.alumni-profile {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.alumni-image {
+  width: 100px;
+  height: 100px;
+  background-color: #f8f9fa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  flex-shrink: 0;
+}
+
+.alumni-info h3 {
+  color: #212121;
+  margin-top: 0;
+}
+
+.alumni-info p {
+  margin: 0.25rem 0;
+}
+
+.alumni-bio {
+  margin-top: 0.5rem;
+}
+
+.chapter-list {
+  padding-left: 1.5rem;
+}
+
+.chapter-list li {
+  margin-bottom: 0.5rem;
+}
+
+.chapter-list strong {
+  color: #C62828;
+}
+
+@media (max-width: 768px) {
+  .alumni-profile {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .alumni-image {
+    margin: 0 auto;
+  }
+  
+  .alumni-profile-card {
+    padding: 1rem;
+  }
+}

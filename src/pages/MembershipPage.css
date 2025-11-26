@@ -1,0 +1,88 @@
+.membership-page {
+  padding: 2rem 0;
+}
+
+.membership-section {
+  margin-bottom: 2rem;
+}
+
+.membership-section h2 {
+  color: #212121;
+  border-bottom: 3px solid #C62828;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.benefit-category h3 {
+  color: #C62828;
+  margin-top: 0;
+}
+
+.steps-list {
+  counter-reset: step-counter;
+  list-style: none;
+  padding: 0;
+}
+
+.steps-list li {
+  counter-increment: step-counter;
+  margin-bottom: 1.5rem;
+  padding-left: 3rem;
+  position: relative;
+}
+
+.steps-list li:before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #C62828;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.fees-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.fees-table th,
+.fees-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.fees-table th {
+  background-color: #f8f9fa;
+  color: #212121;
+}
+
+@media (max-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .fees-table {
+    font-size: 0.9rem;
+  }
+  
+  .fees-table th,
+  .fees-table td {
+    padding: 0.5rem;
+  }
+}
