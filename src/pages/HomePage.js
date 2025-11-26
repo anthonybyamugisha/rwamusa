@@ -48,18 +48,6 @@ const HomePage = () => {
       </div>
       
       <div className="home-section">
-        <h2>Latest News & Updates</h2>
-        <div className="card">
-          <ul>
-            <li>New scholarship program launching soon</li>
-            <li>Annual reunion registration now open</li>
-            <li>Call for nominations for outstanding alumni award</li>
-          </ul>
-          <button className="rwamusa-button">View All News</button>
-        </div>
-      </div>
-      
-      <div className="home-section">
         <h2>Upcoming Events</h2>
         <div className="card">
           <ul>
@@ -69,15 +57,6 @@ const HomePage = () => {
           </ul>
           <button className="rwamusa-button secondary">View All Events</button>
         </div>
-      </div>
-      
-      <div className="home-cta">
-        <h2>Join Our Community</h2>
-        <p>
-          Become a member of RWAMUSA to connect with fellow alumni, access exclusive resources, 
-          and contribute to our ongoing community initiatives.
-        </p>
-        <button className="rwamusa-button">Learn About Membership</button>
       </div>
     </div>
   );

@@ -17,19 +17,15 @@ const Footer = () => {
           <h4>About RWAMUSA</h4>
           <ul className="footer-links">
             <li><a href="/about">About Us</a></li>
-            <li><a href="/membership">Membership</a></li>
             <li><a href="/events">Events</a></li>
-            <li><a href="/projects">Projects & Impact</a></li>
           </ul>
         </div>
         
         <div className="footer-section">
           <h4>Get Involved</h4>
           <ul className="footer-links">
-            <li><a href="/student-corner">Student Corner</a></li>
-            <li><a href="/alumni-network">Alumni Network</a></li>
+            <li><a href="/alumni-network">Alumni</a></li>
             <li><a href="/contact">Contact Us</a></li>
-            <li><a href="/donate">Donate/Support</a></li>
           </ul>
         </div>
         
@@ -55,7 +51,6 @@ const Footer = () => {
       
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} RWAMUSA. All rights reserved.</p>
-        <a href="/privacy-policy">Privacy Policy</a>
       </div>
     </footer>
   );

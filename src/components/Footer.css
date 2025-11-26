@@ -41,6 +41,9 @@
 .motto {
   font-style: italic;
   margin: 0;
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .footer-links, .contact-info {
@@ -129,5 +132,9 @@
   
   .logo-text {
     font-size: 1.3rem;
+  }
+  
+  .motto {
+    font-size: 1rem;
   }
 }

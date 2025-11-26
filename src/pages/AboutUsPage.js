@@ -1,97 +1,100 @@
 import React from 'react';
+import { FaUsers, FaBook, FaHandsHelping, FaGraduationCap, FaStar, FaGlobeAfrica } from 'react-icons/fa';
+import { IoLocationSharp } from 'react-icons/io5';
+import { MdOutlineSchool } from 'react-icons/md';
 import './AboutUsPage.css';
 
 const AboutUsPage = () => {
   return (
-    <div className="page-container about-page">
-      <h1 className="page-title">About RWAMUSA</h1>
-      
-      <div className="about-section">
+    <div className="about-page">
+      {/* Hero Section */}
+      <section className="hero-section">
+        <h1>Welcome to RWAMUSA</h1>
+        <p>
+          RwamparaMakerere University Students Association (RWAMUSA) is a vibrant community of students 
+          dedicated to academic excellence, personal growth, and community development. We strive to create 
+          a supportive environment that nurtures leadership, innovation, and social responsibility.
+        </p>
+      </section>
+
+      {/* Mission & Vision */}
+      <div className="mission-vision">
+        <div className="mission-card">
+          <h2>Our Mission</h2>
+          <p>
+            To empower families and individual youth through self-awareness, skilling, and advocacy, 
+            creating a platform for holistic development and meaningful impact in our communities.
+          </p>
+        </div>
+        
+        <div className="vision-card">
+          <h2>Our Vision</h2>
+          <p>
+            Creating a strong, sustainable, morally sound society led by empowered young people who 
+            are catalysts for positive change in their communities and beyond.
+          </p>
+        </div>
+      </div>
+
+      {/* Core Values */}
+      <section className="values-section">
+        <h2>Our Core Values</h2>
+        <div className="values-grid">
+          <div className="value-card">
+            <div className="value-icon"><FaUsers /></div>
+            <h3>Unity</h3>
+            <p>Strength through solidarity and shared purpose, fostering a sense of belonging among members.</p>
+          </div>
+          
+          <div className="value-card">
+            <div className="value-icon"><FaGraduationCap /></div>
+            <h3>Education</h3>
+            <p>Championing lifelong learning and intellectual growth as the foundation for personal and community development.</p>
+          </div>
+          
+          <div className="value-card">
+            <div className="value-icon"><FaGlobeAfrica /></div>
+            <h3>Community</h3>
+            <p>Building meaningful connections across generations while maintaining our cultural heritage.</p>
+          </div>
+          
+          <div className="value-card">
+            <div className="value-icon"><FaHandsHelping /></div>
+            <h3>Service</h3>
+            <p>Dedicated to contributing positively to society through meaningful initiatives and outreach programs.</p>
+          </div>
+          
+          <div className="value-card">
+            <div className="value-icon"><FaStar /></div>
+            <h3>Excellence</h3>
+            <p>Striving for the highest standards in all our endeavors, both academic and extracurricular.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Organization Details */}
+      <section className="org-details">
         <h2>Organization Details</h2>
-        <div className="card">
-          <h3>Article 1: THE NAME OF THE ORGANIZATION</h3>
+        
+        <div className="detail-item">
+          <h3><FaBook /> Name of the Organization</h3>
+          <p>RwamparaMakerere University Students Association (RWAMUSA)</p>
+        </div>
+        
+        <div className="detail-item">
+          <h3><IoLocationSharp /> Location</h3>
+          <p>Makerere University, Kampala, Uganda</p>
+        </div>
+        
+        <div className="detail-item">
+          <h3><MdOutlineSchool /> Areas of Operation</h3>
           <p>
-            The name of the association shall be RwamparaMakerere University Students Association (RWAMUSA).
-          </p>
-          
-          <h3>Article 2: LOCATION</h3>
-          <p>
-            The Head offices of RWAMUSA are located at Makerere University Kampala Uganda.
-          </p>
-          
-          <h3>Article 3: AREAS OF OPERATION</h3>
-          <p>
-            The Association (RWAMUSA) shall be national wide whereby we will have different chapters from different 
-            Universities across the country. However currently we started with Makerere University and so soon we are 
-            going to annex other Universities across the country.
+            RWAMUSA operates nationwide with chapters in universities across Uganda. 
+            Currently based at Makerere University, we are expanding to other institutions 
+            to create a broader network of empowered students and alumni.
           </p>
         </div>
-      </div>
-      
-      <div className="about-section">
-        <h2>Article 4: VISION, MISSION, OBJECTIVES, ACTIVITIES AND VALUES</h2>
-        <div className="card">
-          <h3>Vision</h3>
-          <p>
-            Creating a strong, sustainable, morally sounding society majored by the young people.
-          </p>
-          
-          <h3>Mission</h3>
-          <p>
-            To empower families and individual youth through self-awareness, skilling and advocacy.
-          </p>
-        </div>
-      </div>
-      
-      <div className="about-section">
-        <h2>Our Symbolism</h2>
-        <div className="card symbolism-section">
-          <div className="symbolism-item">
-            <h3>Circular Badge</h3>
-            <p>
-              Represents wholeness, continuity, and community across generations. The circle has no beginning 
-              or end, symbolizing the eternal bonds that connect us.
-            </p>
-          </div>
-          
-          <div className="symbolism-item">
-            <h3>Scenic Landscape</h3>
-            <p>
-              Depicts green hills, mountains, and a rising sun, symbolizing hope, strength, and Uganda's 
-              natural beauty. This imagery reminds us of our roots and the promising future ahead.
-            </p>
-          </div>
-          
-          <div className="symbolism-item">
-            <h3>Open Book with Leaves</h3>
-            <p>
-              A powerful symbol of education and growth. The book represents learning and knowledge, while 
-              the sprouting leaves reflect flourishing ideas and personal development.
-            </p>
-          </div>
-          
-          <div className="symbolism-item">
-            <h3>Red Banner</h3>
-            <p>
-              Encircles the badge with the motto "OUR UNITY IS OUR STRENGTH", emphasizing solidarity 
-              between past and present members. The red color signifies our shared passion and commitment.
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <div className="about-section">
-        <h2>Our Values</h2>
-        <div className="card">
-          <ul className="values-list">
-            <li className="value-item"><strong>Unity:</strong> Strength through solidarity and shared purpose</li>
-            <li className="value-item"><strong>Education:</strong> Lifelong learning and intellectual growth</li>
-            <li className="value-item"><strong>Community:</strong> Building connections across generations</li>
-            <li className="value-item"><strong>Service:</strong> Contributing positively to society</li>
-            <li className="value-item"><strong>Excellence:</strong> Striving for the highest standards in all endeavors</li>
-          </ul>
-        </div>
-      </div>
+      </section>
     </div>
   );
 };
