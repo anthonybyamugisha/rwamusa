@@ -6,33 +6,60 @@
 }
 
 /* Hero Section */
-.home-hero {
+.hero-section {
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 6rem 1rem;
   background: linear-gradient(135deg, #ffffff 0%, #f1f8e9 100%);
-  border-radius: 15px;
-  margin-bottom: 3rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(198, 40, 40, 0.1);
-}
-
-.logo-section {
+  border-radius: 12px;
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 500px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  justify-content: center;
 }
 
-.hero-logo {
-  height: 180px;
-  width: auto;
-  object-fit: contain;
-  transition: transform 0.3s ease;
+.hero-logo-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/images/Rwamusa _logo.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  z-index: 1;
 }
 
-.hero-logo:hover {
-  transform: scale(1.05);
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  color: #C62828;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  color: #4a5568;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 .organization-name {
@@ -42,6 +69,8 @@
   font-weight: 700;
   line-height: 1.3;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .mission-statement {
@@ -52,6 +81,7 @@
   color: #2d3748;
   line-height: 1.6;
   padding: 0 1rem;
+  font-style: italic;
 }
 
 .motto {
@@ -87,35 +117,208 @@
   }
 }
 
-/* Home Sections */
-.home-section {
+/* Mission & Vision Cards */
+.mission-vision {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
   margin-bottom: 3rem;
 }
 
-.home-section h2 {
-  color: #212121;
-  margin-bottom: 1.5rem;
-}
-
-.home-cta {
-  text-align: center;
+.mission-card, .vision-card {
+  background: white;
   padding: 2rem;
-  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(46, 125, 50, 0.1);
+  border-top: 4px solid #C62828;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-card:hover, .vision-card:hover {
+  transform: translateY(-5px);
+}
+
+.mission-card h2, .vision-card h2 {
+  color: #2d3748;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #2E7D32;
+  display: inline-block;
+}
+
+/* Core Values Section with Hexagonal Cards */
+.core-values {
+  margin: 4rem 0;
+}
+
+.core-values h2 {
+  text-align: center;
+  color: #2d3748;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+/* Hexagon Styles */
+.value-card {
+  position: relative;
+  width: 250px;
+  height: 280px;
+  margin: 15px 0;
+  background: #0078D7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 15px;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 120, 215, 0.3);
+}
+
+.value-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #C62828;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.value-icon {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 0.8rem;
+  z-index: 1;
+}
+
+.value-card h3 {
+  color: #FF6B6B;
+  margin: 0.5rem 0;
+  font-size: 1.3rem;
+  text-align: center;
+  z-index: 1;
+  line-height: 1.2;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.value-card p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  margin-top: 0.5rem;
+  max-width: 90%;
+}
+
+/* Events Section */
+.events-section {
+  margin: 4rem 0;
+}
+
+.events-section h2 {
+  text-align: center;
+  color: #2d3748;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #2E7D32;
+  display: block;
+  width: 100%;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.event-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(46, 125, 50, 0.1);
+  border-top: 4px solid #C62828;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-image-placeholder {
+  width: 100%;
+  height: 150px;
+  background-color: #f1f8e9;
   border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  overflow: hidden;
 }
 
-.home-cta h2 {
-  color: #212121;
-  margin-top: 0;
+.placeholder-text {
+  color: #777;
+  font-size: 1rem;
 }
 
+.event-card h3 {
+  color: #2d3748;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.event-date {
+  color: #C62828;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.event-description {
+  color: #4a5568;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  .organization-name {
-    font-size: 1.5rem;
+  .mission-vision {
+    grid-template-columns: 1fr;
   }
   
-  .hero-logo {
-    height: 100px;
+  .hero-section {
+    padding: 3rem 1rem;
+    min-height: 400px;
+  }
+  
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-section p {
+    font-size: 1rem;
+  }
+  
+  .organization-name {
+    font-size: 1.5rem;
   }
   
   .mission-statement {
@@ -126,7 +329,45 @@
     font-size: 1.2rem;
   }
   
-  .home-hero {
-    padding: 2rem 1rem;
+  .mission-card h2, .vision-card h2 {
+    font-size: 1.5rem;
+  }
+  
+  .core-values h2 {
+    font-size: 1.5rem;
+  }
+  
+  .events-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .value-card {
+    width: 200px;
+    height: 230px;
+    padding: 15px 10px;
+  }
+  
+  .value-icon {
+    font-size: 1.8rem;
+  }
+  
+  .value-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .value-card p {
+    font-size: 0.85rem;
+  }
+  
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .event-image-placeholder {
+    height: 120px;
   }
 }

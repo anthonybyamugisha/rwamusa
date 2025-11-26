@@ -5,103 +5,40 @@
   padding: 2rem 1rem;
 }
 
-/* Hero Section */
-.hero-section {
+/* Who We Are Section */
+.who-we-are {
   text-align: center;
-  padding: 4rem 1rem;
-  background: linear-gradient(135deg, #ffffff 0%, #f1f8e9 100%);
-  border: 1px solid rgba(198, 40, 40, 0.1);
-  border-radius: 12px;
-  margin-bottom: 3rem;
-}
-
-.hero-section h1 {
-  font-size: 2.5rem;
-  color: #C62828;
-  margin-bottom: 1rem;
-}
-
-.hero-section p {
-  font-size: 1.2rem;
-  color: #4a5568;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-/* Mission & Vision Cards */
-.mission-vision {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-
-.mission-card, .vision-card {
   background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(46, 125, 50, 0.1);
-  border-top: 4px solid #C62828;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(46, 125, 50, 0.15);
+  border-top: 5px solid #C62828;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  max-width: 100%;
+  margin: 0 auto 3rem auto;
+  animation: slideInLeft 1.4s ease-out;
 }
 
-.mission-card:hover, .vision-card:hover {
+.who-we-are:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-.mission-card h2, .vision-card h2 {
+.who-we-are h2 {
   color: #2d3748;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 3px solid #2E7D32;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 4px solid #2E7D32;
   display: inline-block;
 }
 
-/* Values Section */
-.values-section {
-  margin: 4rem 0;
-}
-
-.values-section h2 {
-  text-align: center;
-  color: #2d3748;
-  margin-bottom: 2.5rem;
-  font-size: 2rem;
-}
-
-.values-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-}
-
-.value-card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  text-align: center;
-  transition: all 0.3s ease;
-}
-
-.value-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 15px rgba(198, 40, 40, 0.2);
-  border: 1px solid rgba(198, 40, 40, 0.1);
-}
-
-.value-card h3 {
-  color: #C62828;
-  margin: 1rem 0;
-  font-size: 1.3rem;
-}
-
-.value-icon {
-  font-size: 2.5rem;
-  color: #2E7D32;
-  margin-bottom: 1rem;
+.who-we-are p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4a5568;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* Organization Details */
@@ -134,17 +71,29 @@
   line-height: 1.6;
 }
 
+/* Slide In Animation */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-  .mission-vision {
-    grid-template-columns: 1fr;
+  .who-we-are h2, .org-details h2 {
+    font-size: 1.5rem;
   }
   
-  .hero-section h1 {
-    font-size: 2rem;
+  .who-we-are {
+    padding: 1.5rem;
   }
   
-  .hero-section p {
+  .who-we-are p {
     font-size: 1rem;
   }
 }
