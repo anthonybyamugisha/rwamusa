@@ -102,37 +102,28 @@ const HomePage = () => {
         <div className="events-grid">
           {/* Event 1 */}
           <div className="event-card">
-            <div className="event-image-placeholder">
-              <div className="placeholder-text">Event Image</div>
-            </div>
-            <div className="event-date">June 15, 2024</div>
-            <h3>Annual Alumni Meet</h3>
+            <div className="event-date">February 21, 2026</div>
+            <h3>Beach Bash</h3>
             <p className="event-description">
-              Join us for our annual gathering of RWAMUSA alumni from all chapters.
+              Join us for a fun-filled beach event with games, music, and relaxation.
             </p>
           </div>
 
           {/* Event 2 */}
           <div className="event-card">
-            <div className="event-image-placeholder">
-              <div className="placeholder-text">Event Image</div>
-            </div>
-            <div className="event-date">July 22, 2024</div>
-            <h3>Community Service Day</h3>
+            <div className="event-date">March 14 or 21, 2026</div>
+            <h3>Elders Football Match</h3>
             <p className="event-description">
-              Participate in our quarterly community service initiative.
+              Exciting football match featuring our elder members. Come support the teams!
             </p>
           </div>
 
           {/* Event 3 */}
           <div className="event-card">
-            <div className="event-image-placeholder">
-              <div className="placeholder-text">Event Image</div>
-            </div>
-            <div className="event-date">August 5, 2024</div>
-            <h3>Career Development Workshop</h3>
+            <div className="event-date">April 11, 2026</div>
+            <h3>Launching of the Project</h3>
             <p className="event-description">
-              Enhance your professional skills with our expert-led workshops.
+              Official launch of our new community project initiative.
             </p>
           </div>
         </div>

@@ -13,7 +13,7 @@ const AlumniNetworkPage = () => {
           <div className="alumni-profile">
             <div className="alumni-image">Profile Image</div>
             <div className="alumni-info">
-              <h3>Dr. Elizabeth Nantume</h3>
+              <h3>Dr. Elizabeth Katushabe</h3>
               <p><strong>Class of 1985 | Medicine</strong></p>
               <p className="alumni-bio">
                 Renowned cardiologist and researcher who has pioneered innovative treatments for heart disease 
@@ -27,7 +27,7 @@ const AlumniNetworkPage = () => {
           <div className="alumni-profile">
             <div className="alumni-image">Profile Image</div>
             <div className="alumni-info">
-              <h3>Mr. Robert Sentongo</h3>
+              <h3>Mr. Robert Mugisha</h3>
               <p><strong>Class of 1992 | Engineering</strong></p>
               <p className="alumni-bio">
                 Founder and CEO of a successful renewable energy company that has brought solar power to 
@@ -41,7 +41,7 @@ const AlumniNetworkPage = () => {
           <div className="alumni-profile">
             <div className="alumni-image">Profile Image</div>
             <div className="alumni-info">
-              <h3>Ms. Fatima Kabanda</h3>
+              <h3>Ms. Fatima Ainembabazi</h3>
               <p><strong>Class of 2001 | Law</strong></p>
               <p className="alumni-bio">
                 Human rights lawyer and advocate who has represented over 200 cases of social injustice. 
