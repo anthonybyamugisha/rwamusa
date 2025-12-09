@@ -80,7 +80,6 @@
   background-color: #FFFFFF;
   color: #2E7D32;
   border-radius: 50%;
-  font-weight: bold;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
@@ -88,6 +87,11 @@
 .social-icons a:hover {
   background-color: #C62828;
   color: #FFFFFF;
+}
+
+.social-icons svg {
+  width: 20px;
+  height: 20px;
 }
 
 .footer-bottom {

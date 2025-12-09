@@ -40,21 +40,17 @@ const ContactPage = () => {
             <div className="contact-details">
               <div className="contact-item">
                 <h3>Email</h3>
-                <p>info@rwamusa.org</p>
-                <p>membership@rwamusa.org</p>
+                <p>rwamusa7@gmail.com</p>
               </div>
               
               <div className="contact-item">
                 <h3>Phone</h3>
-                <p>+1 (555) 123-4567</p>
-                <p>+1 (555) 987-6543</p>
+                <p>+256 787638563</p>
               </div>
               
               <div className="contact-item">
                 <h3>Address</h3>
-                <p>123 University Avenue</p>
-                <p>City, State 12345</p>
-                <p>Country</p>
+                <p>Makerere University Kampala</p>
               </div>
             </div>
           </div>

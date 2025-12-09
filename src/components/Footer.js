@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
@@ -33,18 +34,26 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Contact Information</h4>
           <ul className="contact-info">
-            <li>Email: info@rwamusa.org</li>
-            <li>Phone: +1 (555) 123-4567</li>
-            <li>Address: 123 University Ave, City, Country</li>
+            <li>Email: rwamusa7@gmail.com</li>
+            <li>Phone: +256 787638563</li>
+            <li>Address: Makerere University Kampala</li>
           </ul>
           
           <div className="social-media">
             <h4>Follow Us</h4>
             <div className="social-icons">
-              <a href="https://facebook.com/rwamusa" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
-              <a href="https://twitter.com/rwamusa" target="_blank" rel="noopener noreferrer" aria-label="Twitter">TW</a>
-              <a href="https://instagram.com/rwamusa" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
-              <a href="https://linkedin.com/company/rwamusa" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LI</a>
+              <a href="https://facebook.com/rwamusa" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <FaFacebookF />
+              </a>
+              <a href="https://twitter.com/rwamusa" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <FaTwitter />
+              </a>
+              <a href="https://instagram.com/rwamusa" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <FaInstagram />
+              </a>
+              <a href="https://linkedin.com/company/rwamusa" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <FaLinkedinIn />
+              </a>
             </div>
           </div>
         </div>
