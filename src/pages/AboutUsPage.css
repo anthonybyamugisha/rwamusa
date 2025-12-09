@@ -204,6 +204,48 @@
   border-left: 3px solid #2E7D32;
 }
 
+/* Cabinet Photo Section */
+.cabinet-photo-section {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(46, 125, 50, 0.15);
+  border-top: 5px solid #2E7D32;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  max-width: 100%;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+}
+
+.cabinet-photo-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.cabinet-photo-section h2 {
+  color: #2d3748;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding-bottom: 0.75rem;
+  border-bottom: 4px solid #C62828;
+  display: inline-block;
+}
+
+.cabinet-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.cabinet-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Organization Details */
 .org-details {
   background: #f5f5f5;
@@ -338,11 +380,11 @@
     padding: 1.5rem 0.8rem;
   }
   
-  .who-we-are, .location-section, .areas-of-operation-section, .leadership-section {
+  .who-we-are, .location-section, .areas-of-operation-section, .leadership-section, .cabinet-photo-section {
     padding: 2rem;
   }
   
-  .who-we-are h2, .location-section h2, .areas-of-operation-section h2, .leadership-section h2 {
+  .who-we-are h2, .location-section h2, .areas-of-operation-section h2, .leadership-section h2, .cabinet-photo-section h2 {
     font-size: 1.8rem;
   }
   
@@ -374,15 +416,19 @@
   .other-leaders-row {
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   }
+  
+  .cabinet-image {
+    max-width: 90%;
+  }
 }
 
 /* Mobile Responsive Design */
 @media (max-width: 768px) {
-  .who-we-are h2, .org-details h2, .location-section h2, .areas-of-operation-section h2, .leadership-section h2 {
+  .who-we-are h2, .org-details h2, .location-section h2, .areas-of-operation-section h2, .leadership-section h2, .cabinet-photo-section h2 {
     font-size: 1.5rem;
   }
   
-  .who-we-are, .location-section, .areas-of-operation-section, .leadership-section {
+  .who-we-are, .location-section, .areas-of-operation-section, .leadership-section, .cabinet-photo-section {
     padding: 1.5rem;
   }
   
@@ -403,8 +449,12 @@
     padding: 1.2rem;
   }
   
-  .leadership-section {
+  .leadership-section, .cabinet-photo-section {
     padding: 2rem 1.5rem;
+  }
+  
+  .cabinet-image {
+    max-width: 100%;
   }
 }
 
@@ -414,7 +464,7 @@
     padding: 1rem 0.5rem;
   }
   
-  .who-we-are, .location-section, .areas-of-operation-section {
+  .who-we-are, .location-section, .areas-of-operation-section, .cabinet-photo-section {
     padding: 1.2rem;
   }
   
@@ -422,7 +472,7 @@
     padding: 1.5rem 1rem;
   }
   
-  .who-we-are h2, .location-section h2, .areas-of-operation-section h2, .leadership-section h2 {
+  .who-we-are h2, .location-section h2, .areas-of-operation-section h2, .leadership-section h2, .cabinet-photo-section h2 {
     font-size: 1.3rem;
   }
   
@@ -450,5 +500,9 @@
   
   .leader-card {
     padding: 1rem;
+  }
+  
+  .cabinet-image {
+    border-radius: 4px;
   }
 }

@@ -199,6 +199,14 @@ const AboutUsPage = () => {
         </div>
       </section>
 
+      {/* Cabinet Photo Section */}
+      <section className="cabinet-photo-section animate-fade-in-up">
+        <h2 className="animate-fade-in-down">RWAMUSA Cabinet</h2>
+        <div className="cabinet-image-container">
+          <img src="/assets/images/cabinet.jpg" alt="RWAMUSA Cabinet" className="cabinet-image" />
+        </div>
+      </section>
+
       {/* Mission section has been removed as requested */}
       {/* Core Values section has been removed as requested */}
     </div>

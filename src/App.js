@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 import './App.css';
 
 // Import page components (will create these next)
@@ -22,12 +22,12 @@ function Navigation() {
           <h1 className="logo-text">RWAMUSA</h1>
         </div>
         <ul className="nav-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About Us</a></li>
-          <li><a href="/events">Events</a></li>
-          <li><a href="/gallery">Gallery</a></li>
-          <li><a href="/alumni-network">Alumni</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><NavLink to="/" end className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Home</NavLink></li>
+          <li><NavLink to="/about" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>About Us</NavLink></li>
+          <li><NavLink to="/events" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Events</NavLink></li>
+          <li><NavLink to="/gallery" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Gallery</NavLink></li>
+          <li><NavLink to="/alumni-network" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Alumni</NavLink></li>
+          <li><NavLink to="/contact" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Contact</NavLink></li>
         </ul>
       </div>
     </nav>
