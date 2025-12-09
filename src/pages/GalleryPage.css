@@ -33,11 +33,23 @@
   color: #666;
   object-fit: cover;
   width: 100%;
+  filter: brightness(0.95) contrast(0.9) saturate(0.95);
+  transition: filter 0.3s ease;
+}
+
+.gallery-image:hover {
+  filter: brightness(1) contrast(1) saturate(1);
 }
 
 .gallery-item img.gallery-image {
   height: 200px;
   object-fit: cover;
+  filter: brightness(0.95) contrast(0.9) saturate(0.95);
+  transition: filter 0.3s ease;
+}
+
+.gallery-item img.gallery-image:hover {
+  filter: brightness(1) contrast(1) saturate(1);
 }
 
 .gallery-item p {

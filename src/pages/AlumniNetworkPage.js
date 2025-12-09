@@ -68,21 +68,6 @@ const AlumniNetworkPage = () => {
         </div>
       </div>
       
-      <div className="alumni-section">
-        <h2>Alumni Chapters</h2>
-        <div className="card">
-          <p>
-            Connect with alumni in your region through our active chapter network.
-          </p>
-          <ul className="chapter-list">
-            <li><strong>Kampala Chapter:</strong> Monthly networking dinners</li>
-            <li><strong>New York Chapter:</strong> Professional development seminars</li>
-            <li><strong>London Chapter:</strong> Cultural events and community service</li>
-            <li><strong>Nairobi Chapter:</strong> Business networking mixers</li>
-          </ul>
-          <button className="rwamusa-button secondary">Find Your Chapter</button>
-        </div>
-      </div>
     </div>
   );
 };
