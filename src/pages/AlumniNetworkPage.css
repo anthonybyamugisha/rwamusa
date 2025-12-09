@@ -161,6 +161,31 @@
   }
 }
 
+/* Tablet Responsive Design */
+@media (max-width: 1024px) {
+  .alumni-network-page {
+    padding: 1.5rem 0;
+  }
+  
+  .alumni-profile-card, .card {
+    padding: 1.3rem;
+  }
+  
+  .alumni-profile {
+    gap: 1.2rem;
+  }
+  
+  .alumni-image {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .alumni-info h3 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Mobile Responsive Design */
 @media (max-width: 768px) {
   .alumni-profile {
     flex-direction: column;
@@ -171,7 +196,44 @@
     margin: 0 auto;
   }
   
-  .alumni-profile-card {
+  .alumni-profile-card, .card {
     padding: 1rem;
+  }
+  
+  .alumni-image {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .alumni-info h3 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .alumni-network-page {
+    padding: 1rem 0;
+  }
+  
+  .alumni-profile-card, .card {
+    padding: 0.8rem;
+  }
+  
+  .alumni-image {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .alumni-info h3 {
+    font-size: 1.2rem;
+  }
+  
+  .alumni-info p {
+    font-size: 0.9rem;
+  }
+  
+  .alumni-bio {
+    font-size: 0.9rem;
   }
 }

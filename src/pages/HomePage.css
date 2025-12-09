@@ -397,7 +397,65 @@
   font-size: 1rem;
 }
 
-/* Responsive Design */
+/* Tablet Responsive Design */
+@media (max-width: 1024px) {
+  .home-page {
+    padding: 1.5rem 0.8rem;
+  }
+  
+  .hero-section {
+    padding: 5rem 1rem;
+    min-height: 450px;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+  
+  .organization-name {
+    font-size: 1.8rem;
+  }
+  
+  .mission-statement {
+    font-size: 1.3rem;
+  }
+  
+  .motto {
+    font-size: 1.4rem;
+    padding: 0.7rem 1.8rem;
+  }
+  
+  .mission-card h2, .vision-card h2 {
+    font-size: 1.6rem;
+  }
+  
+  .core-values h2 {
+    font-size: 1.8rem;
+  }
+  
+  .events-section h2 {
+    font-size: 1.6rem;
+  }
+  
+  .value-card {
+    width: 220px;
+    height: 250px;
+  }
+  
+  .value-icon {
+    font-size: 1.8rem;
+  }
+  
+  .value-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .value-card p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile Responsive Design */
 @media (max-width: 768px) {
   .mission-vision {
     grid-template-columns: 1fr;
@@ -426,6 +484,7 @@
   
   .motto {
     font-size: 1.2rem;
+    padding: 0.6rem 1.5rem;
   }
   
   .mission-card h2, .vision-card h2 {
@@ -468,5 +527,88 @@
   
   .event-image-placeholder {
     height: 120px;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .home-page {
+    padding: 1rem 0.5rem;
+  }
+  
+  .hero-section {
+    padding: 2rem 0.8rem;
+    min-height: 350px;
+  }
+  
+  .hero-content {
+    padding: 1.5rem 1rem;
+  }
+  
+  .hero-section h1 {
+    font-size: 1.6rem;
+  }
+  
+  .organization-name {
+    font-size: 1.3rem;
+  }
+  
+  .mission-statement {
+    font-size: 1rem;
+  }
+  
+  .motto {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .mission-card, .vision-card {
+    padding: 1.5rem;
+  }
+  
+  .mission-card h2, .vision-card h2 {
+    font-size: 1.3rem;
+  }
+  
+  .core-values {
+    margin: 3rem 0;
+  }
+  
+  .core-values h2 {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .events-section {
+    margin: 3rem 0;
+  }
+  
+  .events-section h2 {
+    font-size: 1.3rem;
+  }
+  
+  .value-card {
+    width: 180px;
+    height: 210px;
+  }
+  
+  .value-icon {
+    font-size: 1.6rem;
+  }
+  
+  .value-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .value-card p {
+    font-size: 0.8rem;
+  }
+  
+  .event-card {
+    padding: 1.2rem;
+  }
+  
+  .event-card h3 {
+    font-size: 1.2rem;
   }
 }

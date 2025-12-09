@@ -178,8 +178,67 @@
   }
 }
 
+/* Tablet Responsive Design */
+@media (max-width: 1024px) {
+  .contact-page {
+    padding: 1.5rem 0;
+  }
+  
+  .contact-content {
+    gap: 1.5rem;
+  }
+  
+  .card {
+    padding: 1.3rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 0.7rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile Responsive Design */
 @media (max-width: 768px) {
   .contact-content {
     grid-template-columns: 1fr;
+  }
+  
+  .card {
+    padding: 1rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+  
+  .rwamusa-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .contact-page {
+    padding: 1rem 0;
+  }
+  
+  .card {
+    padding: 0.8rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+  
+  .rwamusa-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
   }
 }

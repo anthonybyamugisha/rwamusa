@@ -118,6 +118,45 @@
   text-decoration: underline;
 }
 
+/* Tablet Responsive Design */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 1.5rem 0 0.8rem;
+  }
+  
+  .footer-container {
+    gap: 1.5rem;
+    padding: 0 1.5rem;
+  }
+  
+  .footer-logo-image {
+    height: 50px;
+  }
+  
+  .logo-text {
+    font-size: 1.3rem;
+  }
+  
+  .motto {
+    font-size: 1rem;
+  }
+  
+  .social-icons {
+    gap: 0.8rem;
+  }
+  
+  .social-icons a {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .footer-bottom {
+    margin: 1.5rem auto 0;
+    padding: 0.8rem 1.5rem 0;
+  }
+}
+
+/* Mobile Responsive Design */
 @media (max-width: 768px) {
   .footer-container {
     grid-template-columns: 1fr;
@@ -140,5 +179,66 @@
   
   .motto {
     font-size: 1rem;
+  }
+  
+  .social-icons a {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .social-icons svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .footer {
+    padding: 1rem 0 0.5rem;
+  }
+  
+  .footer-container {
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+  
+  .footer-logo-image {
+    height: 40px;
+  }
+  
+  .logo-text {
+    font-size: 1.1rem;
+  }
+  
+  .motto {
+    font-size: 0.9rem;
+  }
+  
+  .footer-section h4 {
+    font-size: 1rem;
+  }
+  
+  .social-icons {
+    gap: 0.6rem;
+  }
+  
+  .social-icons a {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .social-icons svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .footer-bottom {
+    margin: 1rem auto 0;
+    padding: 0.5rem 1rem 0;
+  }
+  
+  .footer-bottom p {
+    font-size: 0.9rem;
   }
 }

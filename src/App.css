@@ -130,10 +130,34 @@
   margin-bottom: 1rem;
 }
 
-/* Responsive Design */
+/* Tablet Responsive Design */
+@media (max-width: 1024px) {
+  .nav-container {
+    padding: 0 1.5rem;
+  }
+  
+  .logo-text {
+    font-size: 1.6rem;
+  }
+  
+  .nav-links li {
+    margin-left: 1rem;
+  }
+  
+  .main-content {
+    padding: 1.5rem;
+  }
+  
+  .logo-image {
+    height: 45px;
+  }
+}
+
+/* Mobile Responsive Design */
 @media (max-width: 768px) {
   .nav-container {
     flex-direction: column;
+    padding: 0 1rem;
   }
   
   .logo-container {
@@ -160,5 +184,44 @@
   
   .logo-text {
     font-size: 1.5rem;
+  }
+  
+  .page-container {
+    padding: 0 0.5rem;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .navigation {
+    padding: 0.8rem 0;
+  }
+  
+  .nav-container {
+    padding: 0 0.5rem;
+  }
+  
+  .logo-text {
+    font-size: 1.3rem;
+  }
+  
+  .nav-links {
+    margin-top: 0.8rem;
+  }
+  
+  .nav-links li {
+    margin: 0.3rem;
+  }
+  
+  .main-content {
+    padding: 0.8rem;
+  }
+  
+  .logo-image {
+    height: 35px;
+  }
+  
+  .card {
+    padding: 1rem;
   }
 }
