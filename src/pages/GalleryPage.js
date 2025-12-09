@@ -1,14 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './GalleryPage.css';
 
 const GalleryPage = () => {
+  useEffect(() => {
+    // Add staggered animation to gallery items
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    galleryItems.forEach((item, index) => {
+      // Add animation class
+      item.classList.add('animate-fade-in-up');
+      // Add staggered delay
+      item.style.animationDelay = `${index * 0.1}s`;
+    });
+  }, []);
+
   return (
     <div className="page-container gallery-page">
-      <h1 className="page-title">Gallery</h1>
+      <h1 className="page-title animate-fade-in-down">Gallery</h1>
       
       <div className="gallery-section">
-        <h2>Rwamusa Handover</h2>
-        <p>
+        <h2 className="animate-fade-in-down">Rwamusa Handover</h2>
+        <p className="animate-fade-in-up">
           Capturing the memorable moments from our recent leadership handover ceremony. 
           These images showcase the transition of leadership within RWAMUSA.
         </p>
