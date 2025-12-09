@@ -203,7 +203,20 @@ const AboutUsPage = () => {
       <section className="cabinet-photo-section animate-fade-in-up">
         <h2 className="animate-fade-in-down">RWAMUSA Cabinet</h2>
         <div className="cabinet-image-container">
-          <img src="/assets/images/cabinet.jpg" alt="RWAMUSA Cabinet" className="cabinet-image" />
+          <img src="/assets/images/cabinet_photo.jpg" alt="RWAMUSA Cabinet" className="cabinet-image" />
+        </div>
+      </section>
+
+      {/* Constitution Section */}
+      <section className="constitution-section animate-fade-in-up">
+        <h2 className="animate-fade-in-down">RWAMUSA Constitution</h2>
+        <div className="constitution-content">
+          <p>
+            Download our official constitution to learn more about our organization, governance structure, and operational guidelines.
+          </p>
+          <a href="/assets/documents/RWAMUSA constitution.pdf" download="RWAMUSA_Constitution.pdf" className="rwamusa-button">
+            Download Constitution
+          </a>
         </div>
       </section>
 
