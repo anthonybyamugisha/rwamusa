@@ -1,13 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './AlumniNetworkPage.css';
 
 const AlumniNetworkPage = () => {
+  useEffect(() => {
+    // Add staggered animation to alumni profile cards
+    const alumniCards = document.querySelectorAll('.alumni-profile-card');
+    alumniCards.forEach((card, index) => {
+      // Add animation class
+      card.classList.add('animate-fade-in-up');
+      // Add staggered delay
+      card.style.animationDelay = `${index * 0.1}s`;
+    });
+
+    // Add animation to connect section
+    const connectCard = document.querySelector('.card');
+    if (connectCard) {
+      connectCard.classList.add('animate-fade-in-up');
+    }
+  }, []);
+
   return (
     <div className="page-container alumni-network-page">
-      <h1 className="page-title">Alumni Network</h1>
+      <h1 className="page-title animate-fade-in-down">Alumni Network</h1>
       
       <div className="alumni-section">
-        <h2>Notable Alumni</h2>
+        <h2 className="animate-fade-in-down">Notable Alumni</h2>
         
         <div className="alumni-profile-card">
           <div className="alumni-profile">
@@ -53,7 +70,7 @@ const AlumniNetworkPage = () => {
       </div>
       
       <div className="alumni-section">
-        <h2>Connect with Alumni</h2>
+        <h2 className="animate-fade-in-down">Connect with Alumni</h2>
         <div className="card">
           <p>
             Join our growing network of professionals and stay connected with fellow alumni across the globe.
