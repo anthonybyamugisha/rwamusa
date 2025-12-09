@@ -40,7 +40,7 @@ const AboutUsPage = () => {
             {/* Patron */}
             <div className="leader-card">
               <img src="/assets/images/patron.jpg" alt="Patron" className="leader-image" />
-              <h3 className="leader-name">Patron</h3>
+              <h3 className="leader-name">Major Arinaitwe Kagame</h3>
               <p className="leader-position">Patron</p>
               <p className="leader-speech">
                 As the patron of RWAMUSA, I am committed to guiding this organization towards excellence and ensuring that our values of unity, education, and service are upheld at all times. Together, we will continue to make a positive impact on our community.
@@ -50,7 +50,7 @@ const AboutUsPage = () => {
             {/* President */}
             <div className="leader-card">
               <img src="/assets/images/president.jpg" alt="President" className="leader-image" />
-              <h3 className="leader-name">President</h3>
+              <h3 className="leader-name">Nankunda Happy</h3>
               <p className="leader-position">President</p>
               <p className="leader-speech">
                 It is my honor to serve as the President of RWAMUSA. I pledge to lead with integrity, foster unity among our members, and drive initiatives that will empower our youth and strengthen our community bonds.
@@ -63,71 +63,92 @@ const AboutUsPage = () => {
             {/* Vice President */}
             <div className="leader-card">
               <img src="/assets/images/vice president.jpg" alt="Vice President" className="leader-image" />
-              <h3 className="leader-name">Vice President</h3>
+              <h3 className="leader-name">Bwengye Dicklax</h3>
               <p className="leader-position">Vice President</p>
             </div>
 
             {/* Finance Minister */}
             <div className="leader-card">
               <img src="/assets/images/finance minister.jpg" alt="Finance Minister" className="leader-image" />
-              <h3 className="leader-name">Finance Minister</h3>
+              <h3 className="leader-name">Nahamya Shanitah</h3>
               <p className="leader-position">Finance Minister</p>
             </div>
 
             {/* Speaker */}
             <div className="leader-card">
               <img src="/assets/images/speaker.jpg" alt="Speaker" className="leader-image" />
-              <h3 className="leader-name">Speaker</h3>
+              <h3 className="leader-name">Aryamperera Brian</h3>
               <p className="leader-position">Speaker</p>
             </div>
 
             {/* Vice Speaker */}
             <div className="leader-card">
               <img src="/assets/images/vice speaker.jpg" alt="Vice Speaker" className="leader-image" />
-              <h3 className="leader-name">Vice Speaker</h3>
+              <h3 className="leader-name">Keinembabazi Blaire</h3>
               <p className="leader-position">Vice Speaker</p>
             </div>
 
             {/* General Secretary */}
             <div className="leader-card">
               <img src="/assets/images/general secretary.jpg" alt="General Secretary" className="leader-image" />
-              <h3 className="leader-name">General Secretary</h3>
+              <h3 className="leader-name">Arinda Patricia</h3>
               <p className="leader-position">General Secretary</p>
             </div>
 
-            {/* Publicity */}
+            {/* Vice Secretary */}
             <div className="leader-card">
-              <img src="/assets/images/publicity.jpg" alt="Publicity" className="leader-image" />
-              <h3 className="leader-name">Publicity</h3>
-              <p className="leader-position">Publicity</p>
+              <img src="/assets/images/vice secretary.jpg" alt="Vice Secretary" className="leader-image" />
+              <h3 className="leader-name">Byamugisha Anthony</h3>
+              <p className="leader-position">Vice Secretary</p>
             </div>
 
-            {/* Bugamba Representative */}
+            {/* Publicity Secretary */}
             <div className="leader-card">
-              <img src="/assets/images/bugamba representative.jpg" alt="Bugamba Representative" className="leader-image" />
-              <h3 className="leader-name">Bugamba Representative</h3>
-              <p className="leader-position">Representative</p>
+              <img src="/assets/images/publicity.jpg" alt="Publicity Secretary" className="leader-image" />
+              <h3 className="leader-name">Ahereza Dickson</h3>
+              <p className="leader-position">Publicity Secretary</p>
+            </div>
+
+            {/* Organizing Secretary */}
+            <div className="leader-card">
+              <img src="/assets/images/organising secretary.jpg" alt="Organizing Secretary" className="leader-image" />
+              <h3 className="leader-name">Nahurira Anita</h3>
+              <p className="leader-position">Organizing Secretary</p>
             </div>
 
             {/* Mwizi Representative */}
             <div className="leader-card">
               <img src="/assets/images/mwizi representative.jpg" alt="Mwizi Representative" className="leader-image" />
-              <h3 className="leader-name">Mwizi Representative</h3>
-              <p className="leader-position">Representative</p>
+              <h3 className="leader-name">Nowamani Victor</h3>
+              <p className="leader-position">Mwizi Representative</p>
+            </div>
+
+            {/* Bugamba Representative */}
+            <div className="leader-card">
+              <img src="/assets/images/bugamba representative.jpg" alt="Bugamba Representative" className="leader-image" />
+              <h3 className="leader-name">Nyesiga Joseph</h3>
+              <p className="leader-position">Bugamba S/C Representative</p>
             </div>
 
             {/* Ndeija Representative */}
             <div className="leader-card">
               <img src="/assets/images/ndeija representative.jpg" alt="Ndeija Representative" className="leader-image" />
-              <h3 className="leader-name">Ndeija Representative</h3>
-              <p className="leader-position">Representative</p>
+              <h3 className="leader-name">Kamuhimbise Rinah</h3>
+              <p className="leader-position">Ndeija Representative</p>
             </div>
 
             {/* Rugando Representative */}
             <div className="leader-card">
               <img src="/assets/images/Rugando representative.jpg" alt="Rugando Representative" className="leader-image" />
-              <h3 className="leader-name">Rugando Representative</h3>
-              <p className="leader-position">Representative</p>
+              <h3 className="leader-name">Kyoshabire Evas</h3>
+              <p className="leader-position">Rugando Representative</p>
+            </div>
+
+            {/* MUBS Representative */}
+            <div className="leader-card">
+              <img src="/assets/images/Mubs_representative.jpg" alt="MUBS Representative" className="leader-image" />
+              <h3 className="leader-name">Agaba Tobias</h3>
+              <p className="leader-position">MUBS Representative</p>
             </div>
           </div>
         </div>
