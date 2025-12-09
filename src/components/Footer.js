@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import './Footer.css';
 
@@ -17,17 +18,17 @@ const Footer = () => {
         <div className="footer-section">
           <h4>About RWAMUSA</h4>
           <ul className="footer-links">
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/events">Events</a></li>
-            <li><a href="/gallery">Gallery</a></li>
+            <li><NavLink to="/about">About Us</NavLink></li>
+            <li><NavLink to="/events">Events</NavLink></li>
+            <li><NavLink to="/gallery">Gallery</NavLink></li>
           </ul>
         </div>
         
         <div className="footer-section">
           <h4>Get Involved</h4>
           <ul className="footer-links">
-            <li><a href="/alumni-network">Alumni</a></li>
-            <li><a href="/contact">Contact Us</a></li>
+            <li><NavLink to="/alumni-network">Alumni</NavLink></li>
+            <li><NavLink to="/contact">Contact Us</NavLink></li>
           </ul>
         </div>
         

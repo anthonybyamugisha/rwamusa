@@ -118,6 +118,24 @@
   text-decoration: underline;
 }
 
+/* Add styles for React Router NavLinks */
+.footer-links a:not(.social-icons a) {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: block;
+  padding: 0.2rem 0;
+}
+
+.footer-links a:not(.social-icons a):hover {
+  color: #64B5F6;
+}
+
+.footer-links a:not(.social-icons a).active {
+  color: #FFD700;
+  font-weight: bold;
+}
+
 /* Tablet Responsive Design */
 @media (max-width: 1024px) {
   .footer {
