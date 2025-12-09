@@ -1,13 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './EventsPage.css';
 
 const EventsPage = () => {
+  useEffect(() => {
+    // Add staggered animation to event cards
+    const eventCards = document.querySelectorAll('.event-card');
+    eventCards.forEach((card, index) => {
+      // Add animation class
+      card.classList.add('animate-fade-in-up');
+      // Add staggered delay
+      card.style.animationDelay = `${index * 0.1}s`;
+    });
+  }, []);
+
   return (
     <div className="page-container events-page">
-      <h1 className="page-title">Events</h1>
+      <h1 className="page-title animate-fade-in-down">Events</h1>
       
       <div className="events-section">
-        <h2>Upcoming Events</h2>
+        <h2 className="animate-fade-in-down">Upcoming Events</h2>
         
         <div className="event-card">
           <h3>Beach Bash</h3>
