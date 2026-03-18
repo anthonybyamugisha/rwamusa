@@ -30,7 +30,7 @@ const EventsPage = () => {
         
         <div className="event-card">
           <h3>Elders Football Match</h3>
-          <span className="event-date">March 14 or 21, 2026</span>
+          <span className="event-date">March 21, 2026</span>
           <p>
             Exciting football match featuring our elder members. Come support the teams!
           </p>
