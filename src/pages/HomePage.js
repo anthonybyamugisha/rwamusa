@@ -158,7 +158,7 @@ const HomePage = () => {
 
           {/* Event 2 */}
           <div className="event-card animate-fade-in-up">
-            <div className="event-date">March 14 or 21, 2026</div>
+            <div className="event-date">March 21, 2026</div>
             <h3>Elders Football Match</h3>
             <p className="event-description">
               Exciting football match featuring our elder members. Come support the teams!
